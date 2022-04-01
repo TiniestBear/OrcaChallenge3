@@ -93,11 +93,6 @@ struct Line {
 
 		return true;
 	}
-
-	double ShortestDist(Line& line) {
-
-		return 0.0;
-	}
 };
 struct TestLine : public Line {
 	TestLine(pair<double, double>& pointL, pair<double, double>& pointR, vector<Line>::iterator& startGate, vector<Line>::iterator& stopGate) : 
