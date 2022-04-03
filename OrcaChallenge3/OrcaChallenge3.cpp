@@ -34,7 +34,7 @@ struct Line {
 	//perpendicular to given and through point
 	Line(Line& line, pair<double, double>& point): PointR(point) {
 		if (line.ACoeff) {
-			ACoeff = -line.ACoeff;
+			ACoeff = -1 / line.ACoeff;
 			BCoeff = PointR.second - ACoeff * PointR.first;
 			PointL = IntersectPoint(line);
 		}
